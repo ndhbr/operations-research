@@ -15,7 +15,10 @@ def main():
     solver.Add(7 * x1 - 8 * x2 <= 14)
 
     # Instanzen
-    solver.Add(x1 >= 6)
+    solver.Add(x1 <= 5)
+    solver.Add(x2 >= 4)
+    solver.Add(x1 <= 3)
+
 
     # Target function
     solver.Maximize(7 * x1 + 10 * x2)
